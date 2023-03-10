@@ -1,0 +1,8 @@
+<app-add-student (onAddEstudiante)="addEstudiante($event)"></app-add-student>
+
+<app-estudiante
+*ngFor="let std of estudiantes"
+[estudiante]="std"
+>
+
+</app-estudiante>

@@ -1,0 +1,39 @@
+<form (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="name"
+          id="name"
+          placeholder="Name"
+        />
+      </div>
+  
+      <div>
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            name="lastname"
+            [(ngModel)]="lastname"
+            id="lastname"
+            placeholder="Lastname"
+          />
+        </div>
+        
+
+      <div>
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          [(ngModel)]="edad"
+          id="edad"
+          placeholder="Escriba su edad"
+        />
+      </div>
+    
+   
+    <input type="submit" value="Submit" class="btn btn-block" />
+  </form>
